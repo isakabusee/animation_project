@@ -1,0 +1,29 @@
+.parent {
+    background-color: hsla(200, 100%, 20%);
+    height: 400px;
+    width: 400px;
+}
+
+.child {
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    transition: transform 1s linear 2s;
+}
+.parent:hover .child {
+    /* transition: transform 1s; */
+    background-color: green;
+    transform: translateX(100%);
+}
+
+.box {
+    width: 20px;
+    height: 20px;
+    background: #17D6A9;
+    margin: 4px;
+    display: inline-block;
+}
+
+#b1 {
+    background: red;
+}
