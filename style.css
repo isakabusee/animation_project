@@ -8,12 +8,14 @@
     background-color: red;
     height: 50%;
     width: 50%;
-    transition: transform 1s linear 2s;
+    transition: transform 1s ease-in;
 }
 .parent:hover .child {
     /* transition: transform 1s; */
-    background-color: green;
-    transform: translateX(100%);
+    /* background-color: green; */
+    /* transform: translateX(100%); */
+    animation: left-to-right 1s ease-in forwards;
+    /* animation-fill-mode: ; */
 }
 
 .box {
@@ -26,4 +28,19 @@
 
 #b1 {
     background: red;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateY(100%);
+    }
+    66% {
+        transform: translateX(100%) translateY(100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
