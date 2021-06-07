@@ -26,10 +26,16 @@
     background: #17D6A9;
     margin: 4px;
     display: inline-block;
+    animation: left-to-right 1s;
 }
 
 #b1 {
     background: red;
+    animation: left-to-right 3s;
+    transform: rotateX(100);
+}
+#b2 {
+    transition: cubic-bezier(50);
 }
 
 @keyframes left-to-right {
